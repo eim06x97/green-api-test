@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>GREEN-API Test Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>GREEN-API Test Task</h1>
+
+    <div class="block">
+      <label>idInstance</label>
+      <input type="text" id="idInstance" placeholder="Введите idInstance">
+    </div>
+
+    <div class="block">
+      <label>ApiTokenInstance</label>
+      <input type="text" id="apiToken" placeholder="Введите ApiTokenInstance">
+    </div>
+
+    <div class="block">
+      <button onclick="getSettings()">getSettings</button>
+      <button onclick="getState()">getStateInstance</button>
+    </div>
+
+    <hr>
+
+    <div class="block">
+      <label>Номер телефона (пример: 77071234567)</label>
+      <input type="text" id="phone" placeholder="Введите номер">
+    </div>
+
+    <div class="block">
+      <label>Сообщение</label>
+      <input type="text" id="message" placeholder="Текст сообщения">
+    </div>
+
+    <div class="block">
+      <button onclick="sendMessage()">sendMessage</button>
+    </div>
+
+    <hr>
+
+    <div class="block">
+      <label>URL файла</label>
+      <input type="text" id="fileUrl" placeholder="https://example.com/file.pdf">
+    </div>
+
+    <div class="block">
+      <button onclick="sendFile()">sendFileByUrl</button>
+    </div>
+
+    <div class="block">
+      <label>Ответ API</label>
+      <textarea id="response" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
